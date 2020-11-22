@@ -1,4 +1,3 @@
-
 <?php
 
 use Illuminate\Support\Facades\Route;
@@ -14,7 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () { return view('home');});
+Route::get('/', 'FlowerController@viewAllCategories');
+Route::get('/viewCategories/{categories_id}', 'FlowerController@viewCategories');
+Route::get('/viewCategories/flowerDetail/{flower_id}', 'FlowerController@detailFlowers');
+
+
+
+
+
 Route::get('/login', function () { return view('login');});
 Route::get('/register', function () { return view('register');});
 Route::get('/changePassword', function () { return view('changePassword');});
@@ -30,12 +36,10 @@ Route::get('/headerManager', function () { return view('headerManager');});
 Route::get('/headerUser', function () { return view('headerUser');});
 
 Route::get('/viewProductManager', function () { return view('viewProductManager');});
-Route::get('/viewProductUser', function () { return view('viewProductUser');});
+
 
 Route::get('/flowerDetailManager', function () { return view('flowerDetailManager');});
-Route::get('/flowerDetailUser', function () { return view('flowerDetailUser');});
+
 
 Route::get('/manageCategories', function () { return view('manageCategories');});
-Route::get('/manageCategoriesDetail', function () { 
-    return view('manageCategoriesDetail');
-});
+Route::get('/manageCategoriesDetail', function () { return view('manageCategoriesDetail');});

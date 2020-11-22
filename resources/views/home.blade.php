@@ -15,46 +15,16 @@
 
             <div class="row">
 
-                {{-- FOREACH DISINI --}}
-
-                <div class="col-md-4 imageHover">
+                @foreach ($category as $item)
+                <div class="col-md-6 imageHover">
                     <div class="card mb-4 shadow-sm" style="background-color: #ff80bf">
-                        <a href=""><img class="img-thumbnail p-3 mx-auto" style="background-color: #ff80bf; border: none;" src="{{ asset('img/pink.jpg') }}" alt=""></a>
+                    <a href="/viewCategories/{{ $item->id }}"><img class="img-thumbnail p-3 mx-auto" style="background-color: #ff80bf; border: none;" src="{{ asset("img/$item->categories_image") }}" alt=""></a>
                         <div class="card-body cardColor" style="border: none">
-                            <p class="card-title font-weight-bold text-center">Classic Wedding</p>
+                        <p class="card-title font-weight-bold text-center">{{ $item->categories_name }}</p>
                         </div>
                     </div>
                 </div>
-
-                {{-- ENDFOREACH DISINI --}}
-
-                <div class="col-md-4 imageHover">
-                    <div class="card mb-4 shadow-sm" style="background-color: #ff80bf">
-                        <a href=""><img class="img-thumbnail p-3 mx-auto" style="background-color: #ff80bf; border: none;" src="{{ asset('img/pink.jpg') }}" alt=""></a>
-                        <div class="card-body cardColor" style="border: none">
-                            <p class="card-title font-weight-bold text-center">Classic Wedding</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 imageHover">
-                    <div class="card mb-4 shadow-sm" style="background-color: #ff80bf">
-                        <a href=""><img class="img-thumbnail p-3 mx-auto" style="background-color: #ff80bf; border: none;" src="{{ asset('img/pink.jpg') }}" alt=""></a>
-                        <div class="card-body cardColor" style="border: none">
-                            <p class="card-title font-weight-bold text-center">Classic Wedding</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 imageHover">
-                    <div class="card mb-4 shadow-sm" style="background-color: #ff80bf">
-                        <a href=""><img class="img-thumbnail p-3 mx-auto" style="background-color: #ff80bf; border: none;" src="{{ asset('img/pink.jpg') }}" alt=""></a>
-                        <div class="card-body cardColor" style="border: none">
-                            <p class="card-title font-weight-bold text-center">Classic Wedding</p>
-                        </div>
-                    </div>
-                </div>
-                
+                @endforeach                
 
             </div>
 

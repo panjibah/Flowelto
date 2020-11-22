@@ -1,31 +1,31 @@
-  body {
-      background-color: #ffcbd6;
-  }
-  
-  .transactionContainer {
-      background-color: rgba(0, 0, 0, 0.35);
-  }
-  
-  .imgSize {
-      width: 150px;
-      height: 150px;
-  }
-  
-  .imgSizeHome {
-      width: 300px;
-      height: 300px;
-  }
-  
-  .cardColor {
-      background-color: #ff80bf;
-  }
-  
-  .imageHover {
-      transition: 0.2s;
-      opacity: 0.9;
-  }
-  
-  .imageHover:hover {
-      transform: scale(1.03);
-      opacity: 1;
-  }
+body {
+    background-color: #ffcbd6;
+}
+
+.transactionContainer {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.imgSize {
+    width: 150px;
+    height: 150px;
+}
+
+.imgSizeHome {
+    width: 300px;
+    height: 300px;
+}
+
+.cardColor {
+    background-color: #ff80bf;
+}
+
+.imageHover {
+    transition: 0.2s;
+    opacity: 0.9;
+}
+
+.imageHover:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}

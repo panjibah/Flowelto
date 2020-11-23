@@ -1,6 +1,6 @@
 {{-- MANAGER --}}
 
-@extends('headerGuest')
+@extends('header')
 
 @section('content')
     
@@ -25,7 +25,7 @@
             <div class="col-sm-4">
               <input type="text" class="form-control" id="inputFlowerName">
             </div>
-        </div>        
+        </div>
 
         <div class="form-group row d-flex justify-content-center">
             <label for="inputFlowerPrice" class="col-sm-2 col-form-label">Flower Price (Rupiah)</label>

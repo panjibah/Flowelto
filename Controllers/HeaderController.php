@@ -11,13 +11,9 @@ class HeaderController extends Controller
 {
     public function categoryHeader(){
         
-        $role = session('role');
-        if(!$role){
-            $role = 'Guest';
-        }
         $category = Category::all();
         $date = Carbon::now();
 
-        return view('/header')->with('category', $category)->with('date', $date)->with('role',$role);
+        return view('/header')->with('category', $category)->with('date', $date);
     }
 }

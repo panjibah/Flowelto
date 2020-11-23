@@ -1,5 +1,6 @@
 {{-- GUEST AND USER --}}
-@extends('headerGuest') 
+
+@extends('header') 
 
 @section('content')
     

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,11 +19,19 @@ Route::get('/viewCategories/{categories_id}', 'FlowerController@viewCategories')
 Route::get('/viewCategories/flowerDetail/{flower_id}', 'FlowerController@detailFlowers');
 
 
+Route::get('/register', 'UserController@registerUser');
+Route::post('/registerPost', 'AuthController@registerAuth');
+
+Route::get('/login', 'UserController@loginUser');
+Route::post('/loginPost', 'AuthController@loginAuth');
 
 
 
-Route::get('/login', function () { return view('login');});
-Route::get('/register', function () { return view('register');});
+
+
+
+
+
 Route::get('/changePassword', function () { return view('changePassword');});
 Route::get('/addNewFlower', function () { return view('addNewFlower');});
 Route::get('/updateFlower', function () { return view('updateFlower');});

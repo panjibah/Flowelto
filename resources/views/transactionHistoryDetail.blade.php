@@ -1,6 +1,6 @@
 {{-- USER --}}
 
-@extends('headerUser')
+@extends('headeris')
 
 @section('content')
     

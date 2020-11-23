@@ -1,6 +1,6 @@
 {{-- USER AND MANAGER --}}
 
-@extends('headerUser')
+@extends('header')
 
 @section('content')
     

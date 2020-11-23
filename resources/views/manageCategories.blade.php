@@ -1,6 +1,6 @@
 {{-- MANAGER --}}
 
-@extends('headerManager')
+@extends('header')
 
 @section('content')
     
